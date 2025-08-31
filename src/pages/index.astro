@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+---
+
+<BaseLayout title="Profile">
+  <div class="index-content framed">
+    <h1 id="hello-there">Hello there!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+    <p>
+      You can customise the colour scheme using panr's <a href="https://panr.github.io/terminal-css/"><strong>Terminal.css</strong></a> 
+      generator - all generated schemes are fully compatible with this theme.
+    </p>
+    <p>
+      <a href="https://panr.github.io/terminal-css/">
+        <img src="https://panr.github.io/hugo-theme-terminal-demo/img/terminal-css.png" alt="Terminal.css Preview" />
+      </a>
+    </p>
+  </div>
+</BaseLayout>
